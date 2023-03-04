@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 const FlashCard=(props) => {
-    const [flip, setFlip]=useState(false);
+    console.log('Loaded in: '+props.title)
+    const [flip, setFlip]=useState(props.flipped);
     const flipCard=() => setFlip(!flip);
     let CardCSS;
     
