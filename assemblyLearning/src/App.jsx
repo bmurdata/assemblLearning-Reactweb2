@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react'
 import FlashCard from './components/FlashCard';
 import CardDisplay from './components/CardDisplay';
+import CardForm from './components/CardForm';
 const App = () => {
   
   return (
@@ -11,7 +12,7 @@ const App = () => {
           </div>
 
         <div className='container'>
-          <CardDisplay />
+          <CardForm />
         </div>
     </div>
   )
